@@ -6,9 +6,13 @@ using LitJson;
 
 public class ReadJson : MonoBehaviour
 {
-    private JsonData JsonData;
+    public JsonData JsonData;
     private string jsonString;
     public string url;
+
+    //Delegate for calling events that needs to be called after data is loaded
+    public delegate void onLoaded(JsonData data);
+    public onLoaded onloaded;
 
     private void Start()
     {
@@ -29,8 +33,7 @@ public class ReadJson : MonoBehaviour
             {
                 jsonString = (webRequest.downloadHandler.text);
                 JsonData = JsonMapper.ToObject(jsonString);
-
-                print(JsonData["data"]["regional"][0]["loc"]);
+                onloaded(JsonData);
             }
         }
     }
