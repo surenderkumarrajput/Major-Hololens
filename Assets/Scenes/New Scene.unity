@@ -151,8 +151,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88fc24c4f0e099c43938fa3d0ac25014, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentLocation: 1
+  currentLocation: 3
   dataList: []
+  graphPrefab: {fileID: 7472858912010995090, guid: 9c721c26167052642ad3fb7e306d8fb7,
+    type: 3}
+  totalData:
+    name: 
+    location: 0
+    deaths: 0
+    cases: 0
+    recovered: 0
+  multiplier: 100
 --- !u!114 &1214160991
 MonoBehaviour:
   m_ObjectHideFlags: 0

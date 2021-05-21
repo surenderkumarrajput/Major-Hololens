@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 using LitJson;
 
 //Enums for Location
@@ -18,12 +20,33 @@ public class Manager : MonoBehaviour
 {
     private ReadJson readJson;
     public Location currentLocation;
-    public List<Data> dataList=new List<Data>();
+
+    [HideInInspector]
+    public List<Data> dataList=new List<Data>(); //List containing the data
+    public GameObject graphPrefab; //Graph prefab which is to be spawnned
+    private GraphHandler graphHandler; //Graph Handler script
+    public Data totalData; //Data Variable for holding Total values in india
+    public float multiplier=200;
 
     // Start is called before the first frame update
     void Start()
     {
         readJson = GetComponent<ReadJson>();
+
+        //Spawnning Graph
+        if (graphPrefab)
+        {
+            graphHandler = Instantiate(graphPrefab, Vector3.zero, Quaternion.identity).GetComponent<GraphHandler>();
+        }
+
+        //Setting default name of cube text to loading.
+        foreach (TextMeshProUGUI name in graphHandler.CubeNames)
+        {
+            name.text = "Loading";
+        }
+
+        //Setting deafult name of graph text to Loading as it take time to get and set data
+        graphHandler.locationName.text = "Loading";
 
         //Binding function to delegate event to call it after data is recieved
         readJson.onloaded += SetData;
@@ -38,10 +61,17 @@ public class Manager : MonoBehaviour
             dataList.Add(new Data(
                 data["data"]["regional"][i]["loc"].ToString(),
                 (Location)i, 
-                data["data"]["regional"][i]["deaths"].ToString(), 
-                data["data"]["regional"][i]["totalConfirmed"].ToString()
+                (int)data["data"]["regional"][i]["deaths"],
+                 (int)data["data"]["regional"][i]["totalConfirmed"],
+                 (int)data["data"]["regional"][i]["discharged"]
                 ));
         }
+
+        //Setting total Data
+        totalData.cases = (int)data["data"]["summary"]["total"];
+        totalData.deaths = (int)data["data"]["summary"]["deaths"];
+        totalData.recovered = (int)data["data"]["summary"]["discharged"];
+
         GetData();
     }
 
@@ -52,9 +82,18 @@ public class Manager : MonoBehaviour
         {
             if(currentLocation==item.location)
             {
-                print("Name-->" + item.name);
-                print("Deaths-->"+item.deaths);
-                print("Cases-->" + item.cases);
+                //Changing scale and setting names of Cubes according to data
+                graphHandler.graphCubes[0].transform.localScale = new Vector3(0.5f, ((float)item.deaths / (float)totalData.deaths)* multiplier, 0.5f);
+                graphHandler.CubeNames[0].text = "Deaths";
+
+                graphHandler.graphCubes[1].transform.localScale = new Vector3(0.5f, ((float)item.cases / (float)totalData.cases)* multiplier, 0.5f);
+                graphHandler.CubeNames[1].text = "Cases";
+
+                graphHandler.graphCubes[2].transform.localScale = new Vector3(0.5f, ((float)item.recovered / (float)totalData.recovered)* multiplier, 0.5f);
+                graphHandler.CubeNames[2].text = "Recovered";
+
+                //Setting Location name to text
+                graphHandler.locationName.text = item.name;
             }
         }
     }
@@ -66,15 +105,17 @@ public class Data
 {
     public string name;
     public Location location;
-    public string deaths;
-    public string cases;
+    public int deaths;
+    public int cases;
+    public int recovered;
 
     //Constructor
-    public Data(string name,Location location, string deaths, string cases)
+    public Data(string name,Location location, int deaths, int cases, int recovered)
     {
         this.name = name;
         this.location = location;
         this.deaths = deaths;
         this.cases = cases;
+        this.recovered = recovered;
     }
 }
