@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using LitJson;
+using Microsoft.MixedReality.Toolkit.UI;
 
 //Enums for Location
 //Note : Add Enum According to Backend Database(SerialWise).
@@ -27,6 +28,7 @@ public class Manager : MonoBehaviour
     private GraphHandler graphHandler; //Graph Handler script
     public Data totalData; //Data Variable for holding Total values in india
     public float multiplier=200;
+    public Data selectedData;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +38,7 @@ public class Manager : MonoBehaviour
         //Spawnning Graph
         if (graphPrefab)
         {
-            graphHandler = Instantiate(graphPrefab, new Vector3(0,2,5), Quaternion.identity).GetComponent<GraphHandler>();
+            graphHandler = Instantiate(graphPrefab,transform).GetComponent<GraphHandler>();
         }
 
         //Setting default name of cube text to loading.
@@ -72,11 +74,10 @@ public class Manager : MonoBehaviour
         totalData.deaths = (int)data["data"]["summary"]["deaths"];
         totalData.recovered = (int)data["data"]["summary"]["discharged"];
 
-        GetData();
     }
 
     //Function to GetData
-    private void GetData()
+    private Data GetData()
     {
         foreach (Data item in dataList)
         {
@@ -94,8 +95,16 @@ public class Manager : MonoBehaviour
 
                 //Setting Location name to text
                 graphHandler.locationName.text = item.name;
+                return item;
             }
         }
+        return null;
+    }
+
+    public void onLocationClicked(PressableButtonHoloLens2 button)
+    {
+        currentLocation = button.GetComponent<ButtonManager>().location;
+        GetData();
     }
 }
 
