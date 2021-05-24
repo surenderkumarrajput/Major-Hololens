@@ -36,7 +36,7 @@ public class Manager : MonoBehaviour
         //Spawnning Graph
         if (graphPrefab)
         {
-            graphHandler = Instantiate(graphPrefab, Vector3.zero, Quaternion.identity).GetComponent<GraphHandler>();
+            graphHandler = Instantiate(graphPrefab, new Vector3(0,2,5), Quaternion.identity).GetComponent<GraphHandler>();
         }
 
         //Setting default name of cube text to loading.
