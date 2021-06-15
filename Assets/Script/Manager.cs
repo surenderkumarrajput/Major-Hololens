@@ -7,7 +7,7 @@ using LitJson;
 using Microsoft.MixedReality.Toolkit.UI;
 
 //Enums for Location
-//Note : Add Enum According to Backend Database(SerialWise).
+//Note : Add Enum According to Backend Database(SerialWise) to be Manually Added.
 public enum Location
 {
     AndamanAndNicobarIslands,
@@ -15,7 +15,37 @@ public enum Location
     ArunachalPradesh,
     Assam,
     Bihar,
-    Chandigarh
+    Chandigarh,
+    Chhattisgarh,
+    DadraandNagarHaveliandDamanandDiu,
+    Delhi,
+    Goa,
+    Gujarat,
+    Haryana,
+    HimachalPradesh,
+    JammuandKashmir,
+    Jharkhand,
+    Karnataka,
+    Kerala,
+    Ladakh,
+    Lakshadweep,
+    MadhyaPradesh,
+    Maharashtra,
+    Manipur,
+    Meghalaya,
+    Mizoram,
+    Nagaland,
+    Odisha,
+    Puducherry,
+    Punjab,
+    Rajasthan,
+    Sikkim,
+    TamilNadu,
+    Telangana,
+    Tripura,
+    Uttarakhand,
+    UttarPradesh,
+    WestBengal,
 }
 public class Manager : MonoBehaviour
 {
@@ -57,7 +87,7 @@ public class Manager : MonoBehaviour
     //Function to set Data adter loading it from json script
     private void SetData(JsonData data)
     {
-        for (int i = 0; i < 6; i++)
+        for (int i = 0; i < data["data"]["regional"].Count; i++)
         {
             //Adding Data to Datalist
             dataList.Add(new Data(
