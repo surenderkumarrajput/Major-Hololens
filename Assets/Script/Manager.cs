@@ -64,7 +64,7 @@ public class Manager : MonoBehaviour
     void Start()
     {
         readJson = GetComponent<ReadJson>();
-
+        
         //Spawnning Graph
         if (graphPrefab)
         {
