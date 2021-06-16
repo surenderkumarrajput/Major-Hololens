@@ -55,22 +55,20 @@ public class Manager : MonoBehaviour
     [HideInInspector]
     public List<Data> dataList=new List<Data>(); //List containing the data
     public GameObject graphPrefab; //Graph prefab which is to be spawnned
-    private GraphHandler graphHandler; //Graph Handler script
+    public GraphHandler graphHandler; //Graph Handler script
     public Data totalData; //Data Variable for holding Total values in india
     public float multiplier=200;
     public Data selectedData;
+    private GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
     {
         readJson = GetComponent<ReadJson>();
-        
-        //Spawnning Graph
+        gameManager = GetComponent<GameManager>();
+
         if (graphPrefab)
         {
-            graphHandler = Instantiate(graphPrefab,transform).GetComponent<GraphHandler>();
-        }
-
         //Setting default name of cube text to loading.
         foreach (TextMeshProUGUI name in graphHandler.CubeNames)
         {
@@ -79,6 +77,7 @@ public class Manager : MonoBehaviour
 
         //Setting deafult name of graph text to Loading as it take time to get and set data
         graphHandler.locationName.text = "Loading";
+        }
 
         //Binding function to delegate event to call it after data is recieved
         readJson.onloaded += SetData;
@@ -135,6 +134,7 @@ public class Manager : MonoBehaviour
     {
         currentLocation = button.GetComponent<ButtonManager>().location;
         GetData();
+        gameManager.onCityButtonClick();
     }
 }
 
