@@ -1856,7 +1856,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0034356117, y: -0.031159997}
+  m_AnchoredPosition: {x: 0.0034356117, y: -0.0687}
   m_SizeDelta: {x: 0.08689304, y: 0.013566645}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &181335034
@@ -2033,7 +2033,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.09115934, y: -0.00080001354}
+  m_AnchoredPosition: {x: 0.09115934, y: 0.022735968}
   m_SizeDelta: {x: 0.056965888, y: 0.01356664}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &191689363
@@ -2346,18 +2346,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 213355685}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &219852542 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 219852542, guid: e459b84c17f826744bda31929e01db47,
-    type: 3}
-  m_PrefabInstance: {fileID: 309536403}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f98e7663599230e419addf153615c144, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &229564286
 GameObject:
   m_ObjectHideFlags: 0
@@ -3028,7 +3016,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00929, y: 0.0276}
+  m_AnchoredPosition: {x: 0.0384, y: 0.0548}
   m_SizeDelta: {x: 0.097127944, y: 0.013566645}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &236547730
@@ -4338,7 +4326,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.102799416, y: -0.039800048}
+  m_AnchoredPosition: {x: 0.102799416, y: -0.0089}
   m_SizeDelta: {x: 0.056965888, y: 0.01356664}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &432854363
@@ -4607,7 +4595,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.01453, y: -0.020959973}
+  m_AnchoredPosition: {x: 0.01453, y: 0.006900009}
   m_SizeDelta: {x: 0.10987832, y: 0.013566645}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &450768207
@@ -6712,7 +6700,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0028164387, y: 0.008040011}
+  m_AnchoredPosition: {x: -0.0028164387, y: -0.0351}
   m_SizeDelta: {x: 0.07393536, y: 0.013566645}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &504621323
@@ -7128,7 +7116,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.01295948, y: -0.0010240078}
+  m_AnchoredPosition: {x: 0.01295948, y: 0.022735968}
   m_SizeDelta: {x: 0.10662326, y: 0.013566645}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &526891228
@@ -7305,7 +7293,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.060595512, y: 0.008264005}
+  m_AnchoredPosition: {x: 0.060595512, y: -0.0351}
   m_SizeDelta: {x: 0.056965888, y: 0.01356664}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &534472009
@@ -8293,7 +8281,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00078868866, y: -0.011224031}
+  m_AnchoredPosition: {x: -0.00078868866, y: -0.0522}
   m_SizeDelta: {x: 0.07813786, y: 0.013566645}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &599522915
@@ -8470,7 +8458,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.019847631, y: -0.040024042}
+  m_AnchoredPosition: {x: 0.019847631, y: -0.008899991}
   m_SizeDelta: {x: 0.12089598, y: 0.013566645}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &600896660
@@ -8955,18 +8943,6 @@ Transform:
   m_Father: {fileID: 573016731}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &663267268 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 663267268, guid: e459b84c17f826744bda31929e01db47,
-    type: 3}
-  m_PrefabInstance: {fileID: 309536403}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f98e7663599230e419addf153615c144, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &667575902
 GameObject:
   m_ObjectHideFlags: 0
@@ -9078,18 +9054,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748335518}
   m_Mesh: {fileID: 4300010, guid: b566bbce04d66f4428421e81a3af0299, type: 3}
---- !u!114 &825175901 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 825175901, guid: e459b84c17f826744bda31929e01db47,
-    type: 3}
-  m_PrefabInstance: {fileID: 309536403}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f98e7663599230e419addf153615c144, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &832448014
 GameObject:
   m_ObjectHideFlags: 0
@@ -10172,7 +10136,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.06635952, y: -0.011319995}
+  m_AnchoredPosition: {x: 0.06635952, y: -0.0522}
   m_SizeDelta: {x: 0.056965888, y: 0.01356664}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1039694643
@@ -10349,7 +10313,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.095, y: -0.0211}
+  m_AnchoredPosition: {x: 0.095, y: 0.006900009}
   m_SizeDelta: {x: 0.056965888, y: 0.01356664}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1048834685
@@ -11976,7 +11940,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.07311916, y: -0.03125608}
+  m_AnchoredPosition: {x: 0.07311916, y: -0.0687}
   m_SizeDelta: {x: 0.056965888, y: 0.01356664}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1169310591
@@ -12489,7 +12453,6 @@ GameObject:
   - component: {fileID: 1214160992}
   - component: {fileID: 1214160991}
   - component: {fileID: 1214160990}
-  - component: {fileID: 1214160993}
   - component: {fileID: 1214160994}
   m_Layer: 0
   m_Name: Manager
@@ -12563,151 +12526,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1214160993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1214160989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45b3eff181cc4244a8a14234096e62fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isFocusRequired: 0
-  keywords:
-  - keyword: Gujarat
-    response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1214160990}
-          m_MethodName: onLocationClicked
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 1828901100}
-            m_ObjectArgumentAssemblyTypeName: Microsoft.MixedReality.Toolkit.UI.PressableButtonHoloLens2,
-              Microsoft.MixedReality.Toolkit.SDK
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - keyword: Punjab
-    response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1214160990}
-          m_MethodName: onLocationClicked
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 219852542}
-            m_ObjectArgumentAssemblyTypeName: Microsoft.MixedReality.Toolkit.UI.PressableButtonHoloLens2,
-              Microsoft.MixedReality.Toolkit.SDK
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - keyword: Chattisgarh
-    response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1214160990}
-          m_MethodName: onLocationClicked
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 1673284677}
-            m_ObjectArgumentAssemblyTypeName: Microsoft.MixedReality.Toolkit.UI.PressableButtonHoloLens2,
-              Microsoft.MixedReality.Toolkit.SDK
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - keyword: Assam
-    response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1214160990}
-          m_MethodName: onLocationClicked
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 2018598393}
-            m_ObjectArgumentAssemblyTypeName: Microsoft.MixedReality.Toolkit.UI.PressableButtonHoloLens2,
-              Microsoft.MixedReality.Toolkit.SDK
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - keyword: Bihar
-    response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1214160990}
-          m_MethodName: onLocationClicked
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 2074546904}
-            m_ObjectArgumentAssemblyTypeName: Microsoft.MixedReality.Toolkit.UI.PressableButtonHoloLens2,
-              Microsoft.MixedReality.Toolkit.SDK
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - keyword: Rajasthan
-    response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1214160990}
-          m_MethodName: onLocationClicked
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 825175901}
-            m_ObjectArgumentAssemblyTypeName: Microsoft.MixedReality.Toolkit.UI.PressableButtonHoloLens2,
-              Microsoft.MixedReality.Toolkit.SDK
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - keyword: West Bengal
-    response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1214160990}
-          m_MethodName: onLocationClicked
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 663267268}
-            m_ObjectArgumentAssemblyTypeName: Microsoft.MixedReality.Toolkit.UI.PressableButtonHoloLens2,
-              Microsoft.MixedReality.Toolkit.SDK
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - keyword: Haryana
-    response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1214160990}
-          m_MethodName: onLocationClicked
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 1639946204}
-            m_ObjectArgumentAssemblyTypeName: Microsoft.MixedReality.Toolkit.UI.PressableButtonHoloLens2,
-              Microsoft.MixedReality.Toolkit.SDK
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  persistentKeywords: 0
-  speechConfirmationTooltipPrefab: {fileID: 8046114618238072051, guid: 271778f6c957b524981067a81d238394,
-    type: 3}
 --- !u!114 &1214160994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14195,8 +14013,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1350726004}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.0107, z: 0}
-  m_LocalScale: {x: 1, y: 1.1375, z: 1}
+  m_LocalPosition: {x: 0, y: -0.0079945, z: 0}
+  m_LocalScale: {x: 1, y: 1.868685, z: 1}
   m_Children:
   - {fileID: 488429836}
   m_Father: {fileID: 385034205}
@@ -16422,18 +16240,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1625531049}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1639946204 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1639946204, guid: e459b84c17f826744bda31929e01db47,
-    type: 3}
-  m_PrefabInstance: {fileID: 309536403}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f98e7663599230e419addf153615c144, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1642769562
 GameObject:
   m_ObjectHideFlags: 0
@@ -16796,18 +16602,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &1673284677 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1673284677, guid: e459b84c17f826744bda31929e01db47,
-    type: 3}
-  m_PrefabInstance: {fileID: 309536403}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f98e7663599230e419addf153615c144, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1693160123
 GameObject:
   m_ObjectHideFlags: 0
@@ -17324,7 +17118,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.05114, y: 0.0081}
+  m_AnchoredPosition: {x: 0.0629, y: 0.0313}
   m_SizeDelta: {x: 0.042482805, y: 0.008377032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1757826820
@@ -17804,18 +17598,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1828901100 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1828901100, guid: e459b84c17f826744bda31929e01db47,
-    type: 3}
-  m_PrefabInstance: {fileID: 309536403}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f98e7663599230e419addf153615c144, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1831200876
 GameObject:
   m_ObjectHideFlags: 0
@@ -19975,18 +19757,6 @@ Transform:
   m_Father: {fileID: 482679400}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2018598393 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2018598393, guid: e459b84c17f826744bda31929e01db47,
-    type: 3}
-  m_PrefabInstance: {fileID: 309536403}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f98e7663599230e419addf153615c144, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2020759024
 GameObject:
   m_ObjectHideFlags: 0
@@ -20193,18 +19963,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2069341339}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2074546904 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2074546904, guid: e459b84c17f826744bda31929e01db47,
-    type: 3}
-  m_PrefabInstance: {fileID: 309536403}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f98e7663599230e419addf153615c144, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2074847998
 GameObject:
   m_ObjectHideFlags: 0
@@ -21076,7 +20834,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.01581, y: 0.008099996}
+  m_AnchoredPosition: {x: -0.0114, y: 0.0313}
   m_SizeDelta: {x: 0.021406345, y: 0.008377032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2144622662
@@ -24036,7 +23794,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6345157150032267991}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.098, y: 0.0256, z: -0.0049}
+  m_LocalPosition: {x: 0.098, y: 0.0586, z: -0.0049}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5832460634768644811}
