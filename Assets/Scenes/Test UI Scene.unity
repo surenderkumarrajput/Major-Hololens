@@ -2011,7 +2011,7 @@ GameObject:
   - component: {fileID: 191689364}
   - component: {fileID: 191689363}
   m_Layer: 0
-  m_Name: Total Cases in Selected Area (2)
+  m_Name: Total Cases in Selected Area (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4585,7 +4585,7 @@ GameObject:
   - component: {fileID: 450768208}
   - component: {fileID: 450768207}
   m_Layer: 0
-  m_Name: Total Deaths in Selected Area (1)
+  m_Name: 'Total Deaths in Selected Area '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4607,8 +4607,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.01295948, y: -0.020959973}
-  m_SizeDelta: {x: 0.10662326, y: 0.013566645}
+  m_AnchoredPosition: {x: 0.01453, y: -0.020959973}
+  m_SizeDelta: {x: 0.10987832, y: 0.013566645}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &450768207
 MonoBehaviour:
@@ -4629,7 +4629,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Total Cases in Selected Area:'
+  m_text: 'Total Deaths in Selected Area:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a84f857bec7e7345843ae29404c57ce, type: 2}
   m_sharedMaterial: {fileID: 21202819797275496, guid: 6a84f857bec7e7345843ae29404c57ce,
@@ -10327,7 +10327,7 @@ GameObject:
   - component: {fileID: 1048834686}
   - component: {fileID: 1048834685}
   m_Layer: 0
-  m_Name: Total Cases in India (5)
+  m_Name: 'Total Deaths in Selected Area (1) '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10349,7 +10349,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.09115934, y: -0.02073598}
+  m_AnchoredPosition: {x: 0.095, y: -0.0211}
   m_SizeDelta: {x: 0.056965888, y: 0.01356664}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1048834685
@@ -11954,7 +11954,7 @@ GameObject:
   - component: {fileID: 1169310592}
   - component: {fileID: 1169310591}
   m_Layer: 0
-  m_Name: Total Deaths in India (2)
+  m_Name: Total Recovery in India (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12528,6 +12528,12 @@ MonoBehaviour:
     deaths: 0
     cases: 0
     recovered: 0
+  currentCaseInIndia: {fileID: 534472007}
+  currentDeathInIndia: {fileID: 1039694641}
+  currentRecoveredInIndia: {fileID: 1169310589}
+  casesInSelectedArea: {fileID: 191689361}
+  deathsInSelectedArea: {fileID: 191689361}
+  RecoveredInSelectedArea: {fileID: 432854361}
 --- !u!114 &1214160991
 MonoBehaviour:
   m_ObjectHideFlags: 0

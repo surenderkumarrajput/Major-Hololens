@@ -60,6 +60,8 @@ public class Manager : MonoBehaviour
     public float multiplier=200;
     public Data selectedData;
     private GameManager gameManager;
+    public GameObject currentCaseInIndia, currentDeathInIndia, currentRecoveredInIndia;
+    public GameObject casesInSelectedArea, deathsInSelectedArea, RecoveredInSelectedArea;
 
     // Start is called before the first frame update
     void Start()
@@ -103,6 +105,11 @@ public class Manager : MonoBehaviour
         totalData.deaths = (int)data["data"]["summary"]["deaths"];
         totalData.recovered = (int)data["data"]["summary"]["discharged"];
 
+        //Assign Cases, Deaths, Recoved Cases In India on Text UI
+        currentCaseInIndia.GetComponent<TextMeshPro>().text = totalData.cases.ToString();
+        currentDeathInIndia.GetComponent<TextMeshPro>().text = totalData.deaths.ToString();
+        currentRecoveredInIndia.GetComponent<TextMeshPro>().text = totalData.recovered.ToString();
+
     }
 
     //Function to GetData
@@ -124,6 +131,12 @@ public class Manager : MonoBehaviour
 
                 //Setting Location name to text
                 graphHandler.locationName.text = item.name;
+
+                //Assign Cases, Deaths, Recoved Cases of Selected Area on Text UI
+                casesInSelectedArea.GetComponent<TextMeshPro>().text = item.cases.ToString();
+                deathsInSelectedArea.GetComponent<TextMeshPro>().text = item.deaths.ToString();
+                RecoveredInSelectedArea.GetComponent<TextMeshPro>().text = item.recovered.ToString();
+
                 return item;
             }
         }
