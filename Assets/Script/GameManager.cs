@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,11 +13,15 @@ public class GameManager : MonoBehaviour
     private Vector3 indiaMapInitialScale;
     private Vector3 graphInitialScale;
 
+    public GameObject date;
+
     private void Awake()
     {
         globeInitialScale = globe.transform.localScale;
         indiaMapInitialScale = indiaMap.transform.localScale;
         graphInitialScale = graph.transform.localScale;
+        PlayerPrefs.SetString("date_time", System.DateTime.Now.ToString("dd/MM/yyyy")); 
+        date.GetComponent<TextMeshPro>().text = (PlayerPrefs.GetString("date_time")).ToString();
     }
     void Start()
     {
